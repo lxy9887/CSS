@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /*选用盒子模型，这样设置的宽度是三者的和*/
+            margin: 0
+                /*盒子与body的边距*/
+                padding:0
+        }
+
+        body {
+
+            background: white;
+        }
+
+        .rainbow {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .rainbow div {
+            overflow: hidden;
+            /*防止边缘合并*/
+
+        }
+
+        .rainbow>div {
+            /*rainbow里面的第一个div*/
+            width: 400px;
+            height: 400px;
+            background: red;
+            border-radius: 60%
+                /*使得这个方盒子变成圆形*/
+        }
+
+        .rainbow>div>div {
+            height: 380px;
+            margin: 10px;
+            background: hsl(60, 90%, 50%);
+            border-radius: 60%
+        }
+
+        .rainbow>div>div>div {
+            height: 360px;
+            margin: 10px;
+            background: hsl(120, 90%, 50%);
+            border-radius: 60%
+        }
+
+        .rainbow>div>div>div>div {
+            height: 340px;
+            margin: 10px;
+            background: hsl(180, 90%, 50%);
+            border-radius: 60%
+        }
+
+        .rainbow>div>div>div>div>div {
+            height: 320px;
+            margin: 10px;
+            background: hsl(240, 90%, 50%);
+            border-radius: 60%
+        }
+
+        .rainbow>div>div>div>div>div>div {
+            height: 300px;
+            margin: 10px;
+            background: hsl(280, 90%, 50%);
+            border-radius: 60%
+        }
+
+        .rainbow>div>div>div>div>div>div {
+            height: 280px;
+            margin: 10px;
+            background: hsl(300, 90%, 50%);
+            border-radius: 60%
+        }
+
+        .rainbow>div>div>div>div>div>div>div {
+            height: 260px;
+            margin: 10px;
+            background: hsl(330, 90%, 50%);
+            border-radius: 60%
+        }
+
+        .rainbow>div>div>div>div>div>div>div>div {
+            height: 240px;
+            margin: 10px;
+            background: hsl(330, 90%, 100%);
+            border-radius: 60%
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="rainbow">
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

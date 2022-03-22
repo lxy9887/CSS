@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .logo {
+            background: yellow;
+            display: inline-block;
+            float: left;
+            margin-top: 6px
+        }
+
+        .logo>img {
+            height: 32px;
+            vertical-align: middle;
+            /*如果遇到logo下面有空隙就输入这一行*/
+            margin-left: 10pax;
+        }
+
+        .nav {
+            float: right;
+            margin-left: 20px;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        ul>li {
+            float: left;
+            padding: 4px 0.5em;
+            line-height: 30px
+        }
+
+        ul {
+
+            display: inline-block;
+        }
+
+        header {
+            background: yellow;
+            color: #f22507;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="clearfix">
+
+        <div class="logo">
+            <img
+                src="	https://xiedaimala.com/packs/_/assets/images/logos/red-logo-3f8db9041e6c15d4ae7ed7e4087c4b98.png">
+        </div>
+        <ul class="clearfix nav">
+            <li>首页</li>
+            <li>课程</li>
+            <li>优惠</li>
+            <li>关于</li>
+        </ul>
+    </header>
+</body>
+
+</html>
